@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Protected Redirect</title>
+    <script>
+        function checkPassword() {
+            var userInput = prompt("Enter the 4-digit password:");
+            if (userInput === "0208") {
+                window.location.href = "https://photos.app.goo.gl/2A79UPxWBinLGbnr8";
+            } else {
+                alert("Incorrect password.");
+            }
+        }
+        window.onload = checkPassword;
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, enable JavaScript.</p>
+</body>
+</html>
